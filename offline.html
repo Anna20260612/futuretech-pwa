@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>離線中 - FutureTech</title>
+<style>
+  body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #F8FAFC;
+    color: #1e293b;
+    font-family: -apple-system, BlinkMacSystemFont, "Noto Sans TC", "PingFang TC", sans-serif;
+    text-align: center;
+    padding: 24px;
+  }
+  .icon {
+    width: 88px;
+    height: 88px;
+    border-radius: 22px;
+    background: #4F46E5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+    box-shadow: 0 10px 30px rgba(79,70,229,0.35);
+  }
+  .icon svg { width: 44px; height: 44px; }
+  h1 { font-size: 22px; margin: 0 0 8px; }
+  p { color: #64748b; font-size: 14px; max-width: 320px; line-height: 1.6; margin: 0 0 24px; }
+  button {
+    background: #4F46E5;
+    color: #fff;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  button:hover { background: #4338CA; }
+</style>
+</head>
+<body>
+  <div class="icon">
+    <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M1 1l22 22"/>
+      <path d="M16.72 11.06A10.94 10.94 0 0 1 19 12.55"/>
+      <path d="M5 12.55a10.94 10.94 0 0 1 5.17-2.39"/>
+      <path d="M10.71 5.05A16 16 0 0 1 22.58 9"/>
+      <path d="M1.42 9a15.91 15.91 0 0 1 4.7-2.88"/>
+      <path d="M8.53 16.11a6 6 0 0 1 6.95 0"/>
+      <line x1="12" y1="20" x2="12.01" y2="20"/>
+    </svg>
+  </div>
+  <h1>目前處於離線狀態</h1>
+  <p>偵測不到網路連線，部分內容（如即時商品資料與結帳功能）暫時無法使用。請確認網路連線後再試一次。</p>
+  <button onclick="location.reload()">重新連線</button>
+</body>
+</html>
