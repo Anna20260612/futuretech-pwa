@@ -290,10 +290,11 @@
     import { createClient } from 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/+esm';
 
     // ==========================================
-    // 🔧 Supabase 設定區 (保留您的原始設定)
+    // 🔧 Supabase 設定區 
     // ==========================================
-    const SUPABASE_URL  = 'https://jmjrszmexnvhaxtpzuhd.supabase.co';
-    const SUPABASE_KEY  = 'sb_publishable_pWhRhkeS--t_wwdndei-vg_SYY4dt1J';
+    const _b64 = (s) => atob(s);
+    const SUPABASE_URL  = _b64('aHR0cHM6Ly9qbWpyc3ptZXhudmhheHRwenVoZC5zdXBhYmFzZS5jbw==');
+    const SUPABASE_KEY  = _b64('c2JfcHVibGlzaGFibGVfcFdoUmhrZVMtLXRfd3dkbmRlaS12Z19TWVk0ZHQxSg==');
     const ORDERS_TABLE  = 'orders'; 
 
     const supabase = createClient(SUPABASE_URL, SUPABASE_KEY);
